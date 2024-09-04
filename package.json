@@ -1,43 +1,103 @@
 {
-  "name": "my-tick",
-  "version": "0.1.0",
-  "private": true,
-  "dependencies": {
-    "@testing-library/jest-dom": "^5.17.0",
-    "@testing-library/react": "^13.4.0",
-    "@testing-library/user-event": "^13.5.0",
-    "@types/jest": "^27.5.2",
-    "@types/node": "^16.18.106",
-    "@types/react": "^18.3.5",
-    "@types/react-dom": "^18.3.0",
-    "react": "^18.3.1",
-    "react-dom": "^18.3.1",
-    "react-scripts": "5.0.1",
-    "typescript": "^4.9.5",
-    "web-vitals": "^2.1.4"
-  },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
-  },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
-  }
+    "name": "my-tick",
+    "version": "0.1.0",
+    "private": true,
+    "dependencies": {
+        "@tailwindcss/aspect-ratio": "^0.4.2",
+        "@tailwindcss/forms": "^0.5.8",
+        "@tailwindcss/typography": "^0.5.15",
+        "@testing-library/jest-dom": "^5.17.0",
+        "@testing-library/react": "^13.4.0",
+        "@testing-library/user-event": "^13.5.0",
+        "@types/jest": "^27.5.2",
+        "@types/node": "^16.18.106",
+        "@types/react": "^18.3.5",
+        "@types/react-dom": "^18.3.0",
+        "axios": "^1.7.7",
+        "clsx": "^2.1.1",
+        "lucide-react": "^0.438.0",
+        "react": "^18.3.1",
+        "react-dom": "^18.3.1",
+        "react-router-dom": "^6.26.1",
+        "react-scripts": "5.0.1",
+        "sass": "^1.77.8",
+        "sonner": "^1.5.0",
+        "typescript": "^4.9.5",
+        "web-vitals": "^2.1.4",
+        "zustand": "^4.5.5"
+    },
+    "scripts": {
+        "start": "react-scripts start",
+        "build": "react-scripts build",
+        "test": "react-scripts test",
+        "eject": "react-scripts eject",
+        "lint": "eslint src/**/*.{ts,tsx} --debug --no-ignore",
+        "lint:fix": "eslint src/**/*.{ts,tsx} --fix",
+        "format": "prettier --write 'src/**/*.{ts,tsx,js,jsx,json,css,scss,md}'",
+        "postinstall": "husky",
+        "prepack": "pinst --disable",
+        "postpack": "pinst --enable"
+    },
+    "eslintConfig": {
+        "extends": [
+        "react-app",
+        "react-app/jest"
+        ]
+    },
+    "browserslist": {
+        "production": [
+        ">0.2%",
+        "not dead",
+        "not op_mini all"
+        ],
+        "development": [
+        "last 1 chrome version",
+        "last 1 firefox version",
+        "last 1 safari version"
+        ]
+    },
+    "packageManager": "yarn@1.22.22+sha512.a6b2f7906b721bba3d67d4aff083df04dad64c399707841b7acf00f6b133b7ac24255f2652fa22ae3534329dc6180534e98d17432037ff6fd140556e2bb3137e",
+    "devDependencies": {
+        "@types/react-router-dom": "^5.3.3",
+        "@typescript-eslint/eslint-plugin": "^8.4.0",
+        "@typescript-eslint/parser": "^8.4.0",
+        "autoprefixer": "^10.4.20",
+        "eslint": "^9.9.1",
+        "eslint-config-prettier": "^9.1.0",
+        "eslint-plugin-jsx-a11y": "^6.9.0",
+        "eslint-plugin-prettier": "^5.2.1",
+        "eslint-plugin-react": "^7.35.1",
+        "eslint-plugin-react-hooks": "^4.6.2",
+        "husky": "^9.1.5",
+        "postcss": "^8.4.44",
+        "prettier": "^3.3.3",
+        "tailwindcss": "^3.4.10"
+    },
+    "repository": {
+        "type": "bitbucket",
+        "url": "git clone https://DevHubTeam@bitbucket.org/accesbanque/abm-blipp-ui.git"
+    },
+    "jest": {
+        "moduleNameMapper": {
+        "^axios$": "axios/dist/node/axios.cjs"
+        },
+        "collectCoverageFrom": [
+        "**/*.{js,jsx}",
+        "!coverage/**",
+        "!node_modules/**",
+        "!src/index.js",
+        "!src/core/config/**",
+        "!src/presentation/**",
+        "!public/**",
+        "!build/**"
+        ],
+        "coverageReporters": [
+        "text",
+        "lcov",
+        "json",
+        "text",
+        "clover",
+        "cobertura"
+        ]
+    }
 }
