@@ -1,0 +1,4 @@
+{
+    "*.{ts,tsx, js, jsx}": ["eslint 'src/**' --fix'", "yarn run test:staged"],
+    "*.{js,jsx,ts,tsx,json,css,scss,md}": "prettier --write 'src/**/*.{ts,tsx,js,jsx,json,css,scss,md}"
+}

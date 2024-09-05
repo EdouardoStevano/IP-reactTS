@@ -1,0 +1,40 @@
+# Ignore node_modules
+node_modules
+
+# Ignore build output
+build
+dist
+
+# Ignore all bundle files
+*.bundle.js
+*.min.js
+*.min.css
+
+# Ignore logs
+*.log
+
+# Ignore coverage folder
+coverage
+
+# Ignore environment files
+.env
+.env.*
+
+# Ignore lock files
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# Ignore specific configuration files
+tsconfig.json
+.eslintrc.json
+.prettierrc
+.husky/_/husky.sh
+
+# Ignore public assets
+public
+
+# Ignore specific file types
+*.snap
+*.svg
+*.ico
