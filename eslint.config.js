@@ -1,8 +1,8 @@
-const js = require('@eslint/js');
-const typescriptPlugin = require('@typescript-eslint/eslint-plugin');
-const globals = require('globals');
-const parser = require('@typescript-eslint/parser');
-const reactPlugin = require('eslint-plugin-react');
+import js from '@eslint/js';
+import * as typescriptPlugin from '@typescript-eslint/eslint-plugin';
+import globals from 'globals';
+import parser from '@typescript-eslint/parser';
+import reactPlugin from 'eslint-plugin-react';
 
 const GLOBALS_BROWSER_FIX = Object.assign({}, globals.browser, {
     AudioWorkletGlobalScope: globals.browser['AudioWorkletGlobalScope '],
@@ -11,7 +11,7 @@ const GLOBALS_BROWSER_FIX = Object.assign({}, globals.browser, {
 delete GLOBALS_BROWSER_FIX['AudioWorkletGlobalScope '];
 
 /** @type {import("eslint").Linter.FlatConfig[]} */
-module.exports = [
+export default [
     js.configs.recommended,
     {
         files: ['**/*.ts', '**/*.tsx', '**/*.js', '**/*.jsx'],
@@ -28,9 +28,8 @@ module.exports = [
             '@typescript-eslint': typescriptPlugin,
             react: reactPlugin,
         },
+        ignores: ['node_modules', '**/dist/**', '**/build/**'],
         rules: {
-            // les règles spécifiques ici
-            'no-unused-vars': 'warn',
             ...typescriptPlugin.configs.recommended.rules,
             ...reactPlugin.configs.recommended.rules,
         },

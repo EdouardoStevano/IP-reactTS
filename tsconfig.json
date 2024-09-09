@@ -20,14 +20,9 @@
         "noEmit": true,
         "jsx": "react-jsx",
         "rootDir": "src",
-        "baseUrl": "src",
+        "baseUrl": ".",
         "paths": {
-            "@/*": ["*"],
-            "@presentation/*": ["src/presentation/*"],
-            "@core/*": ["src/core/*"],
-            "@domain/*": ["src/domain/*"],
-            "@data/*": ["src/data/*"],
-            "@infra/*": ["src/infra/*"]
+            "src/*": ["src/*"]
         }
     },
     "include": [
