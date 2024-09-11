@@ -1,0 +1,163 @@
+@keyframes swipeFadeUp {
+    0% {
+        transform: translatey(40px);
+        opacity: 0;
+    }
+    100% {
+        transform: translatey(0px);
+        opacity: 1;
+    }
+}
+
+.swipeFadeUp{
+    animation: swipeFadeUp 0.8s ease-in-out;
+}
+
+@keyframes swipeFadeDown {
+    0% {
+        transform: translatey(-40px);
+        opacity: 0;
+    }
+    100% {
+        transform: translatey(0px);
+        opacity: 1;
+    }
+}
+
+.swipeFadeDown{
+    animation: swipeFadeDown 0.8s ease-in-out;
+}
+
+@keyframes swipeFadeUpCard {
+    0% {
+        transform: translatey(100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translatey(0px);
+        opacity: 1;
+    }
+}
+
+.swipeFadeUpCard{
+    animation: swipeFadeUpCard 0.8s ease-in-out;
+}
+
+@keyframes swipeFadeDownCard {
+    0% {
+        transform: translatey(-100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translatey(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes zoom {
+    0% {
+        transform: scale(0);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes zoomFade {
+    0% {
+        opacity: 0;
+        transform: scale(0);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.zoom{
+    animation: zoomFade 1s ease-in-out;
+}
+
+@keyframes swipeDown {
+    0% {
+        transform: translatey(-100px);
+    }
+    100% {
+        transform: translatey(0px);
+    }
+}
+
+@keyframes swipeUp {
+    0% {
+        transform: translatey(50px);
+    }
+    100% {
+        transform: translatey(0px);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.fadeIn{
+    animation: fadeIn .3s ease-in-out;
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes turnAround {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes swipeFadeUpInfinite {
+    0% {
+        transform: translatey(1px);
+        opacity: 1;
+    }
+    50% {
+        transform: translatey(4px);
+        opacity: 0.5;
+    }
+    100% {
+        transform: translatey(1px);
+        opacity: 1;
+    }
+}
+
+@keyframes swipeFadeDownInfinite {
+    0% {
+        transform: translatey(1px);
+        opacity: 0.5;
+    }
+    50% {
+        transform: translatey(12px);
+        opacity: 1;
+    }
+    100% {
+        transform: translatey(1px);
+        opacity: 0.5;
+    }
+}

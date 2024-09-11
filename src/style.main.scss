@@ -4,11 +4,58 @@
 @tailwind components;
 @tailwind utilities;
 
-.tick-container {
-    background-image: url('./presentation/assets/image/abstract/point-background.webp');
+input {
+    outline: none;
+    border: none;
+
+    &:focus {
+        outline: none;
+        border: none;
+    }
+
+    &::selection {
+        outline: none;
+        border: none;
+    }
+
+    &:focus-visible {
+        outline: none;
+        border: none;
+    }
 }
 
-.tick-content {
-    // background-image: url('./presentation/assets/image/abstract/gradient-background.png');
-    background-size: cover;
+.login-image {
+    // background-image: url(./presentation/assets/image/illustrations/Vector.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: left;
 }
+
+.sign-image {
+    background-image: url('./presentation/assets/image/illustrations/fraud-2048851_640.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.sign-image2 {
+    background-image: url('./presentation/assets/image/illustrations/galleon-1666084_640.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.sign-image3 {
+    background-image: url('./presentation/assets/image/illustrations/people-431943_640.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+// .sign-image2-left{
+//     background-color: rgba(0, 0, 0, 0.1);
+//     height: 83%;
+//     backdrop-filter: blur(2px);
+//     position: absolute;
+//     margin-left: 50px;
+//     transform: rotate(20deg);
+//     width: 570px;
+//     border-radius: 60% 40% 49% 51% / 73% 37% 63% 27%;
+// }

@@ -2,7 +2,15 @@ import React, { lazy } from 'react';
 import { Route, Routes } from 'react-router-dom';
 
 // Importation des pages
-const AuthHome = lazy(() => import('src/presentation/modules/auth'));
+const AuthLayout = lazy(() => import('src/presentation/modules/auth'));
+
+// Importation des panels
+const AuthSignIn = lazy(
+    () => import('src/presentation/modules/auth/panels/signIn'),
+);
+const AuthForgotPassword = lazy(
+    () => import('src/presentation/modules/auth/panels/forgetPassword'),
+);
 
 // Importaion des pages de redirection
 const AuthNotFound = lazy(
@@ -16,7 +24,13 @@ const AuthNotFound = lazy(
 const AuthRoutes = () => {
     return (
         <Routes>
-            <Route path="" element={<AuthHome />} />
+            <Route path="" element={<AuthLayout />}>
+                <Route index element={<AuthSignIn />} />
+                <Route
+                    path="forgot-password"
+                    element={<AuthForgotPassword />}
+                />
+            </Route>
 
             {/* Page de redirection */}
             <Route path="**" element={<AuthNotFound />} />

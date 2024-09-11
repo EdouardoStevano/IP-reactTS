@@ -2020,6 +2020,25 @@
     "@react-aria/utils" "3.24.1"
     "@react-types/shared" "3.23.1"
 
+"@nextui-org/checkbox@^2.1.4":
+  version "2.1.4"
+  resolved "https://registry.yarnpkg.com/@nextui-org/checkbox/-/checkbox-2.1.4.tgz#7eea3552cec747bc7a228a5e14b5fd24bd9a39e1"
+  integrity sha512-74AD4imL064mvs4trQKQj/efwIZYaBt0TmXO6jV+6xGE6S9YjCAy+OBotrgRBG9fURQVQU1qJGnwwsOIdxCXkA==
+  dependencies:
+    "@nextui-org/react-utils" "2.0.16"
+    "@nextui-org/shared-utils" "2.0.7"
+    "@nextui-org/use-callback-ref" "2.0.6"
+    "@nextui-org/use-safe-layout-effect" "2.0.6"
+    "@react-aria/checkbox" "3.14.3"
+    "@react-aria/focus" "3.17.1"
+    "@react-aria/interactions" "3.21.3"
+    "@react-aria/utils" "3.24.1"
+    "@react-aria/visually-hidden" "3.8.12"
+    "@react-stately/checkbox" "3.6.5"
+    "@react-stately/toggle" "3.7.4"
+    "@react-types/checkbox" "3.8.1"
+    "@react-types/shared" "3.23.1"
+
 "@nextui-org/date-input@2.1.3":
   version "2.1.3"
   resolved "https://registry.yarnpkg.com/@nextui-org/date-input/-/date-input-2.1.3.tgz#2698f90ef867bdfa40800e18f46ec4a646bb4e7d"
@@ -2147,6 +2166,22 @@
     "@nextui-org/shared-utils" "2.0.7"
     "@nextui-org/system-rsc" "2.1.5"
 
+"@nextui-org/switch@^2.0.33":
+  version "2.0.33"
+  resolved "https://registry.yarnpkg.com/@nextui-org/switch/-/switch-2.0.33.tgz#f98cb2728afb58a09da14316adee6df1d52d1571"
+  integrity sha512-T7w+8+ex7Pey9HVGXkNft4D11mO5J9iPfmemfLbSOYqbSydcOuINuGRQ1QWy7X+lLYhhZBHb9Ykcf4QtR4dqTQ==
+  dependencies:
+    "@nextui-org/react-utils" "2.0.16"
+    "@nextui-org/shared-utils" "2.0.7"
+    "@nextui-org/use-safe-layout-effect" "2.0.6"
+    "@react-aria/focus" "3.17.1"
+    "@react-aria/interactions" "3.21.3"
+    "@react-aria/switch" "3.6.4"
+    "@react-aria/utils" "3.24.1"
+    "@react-aria/visually-hidden" "3.8.12"
+    "@react-stately/toggle" "3.7.4"
+    "@react-types/shared" "3.23.1"
+
 "@nextui-org/system-rsc@2.1.5":
   version "2.1.5"
   resolved "https://registry.yarnpkg.com/@nextui-org/system-rsc/-/system-rsc-2.1.5.tgz#8899457297113171244994059e5b7355a287d62b"
@@ -2216,6 +2251,13 @@
     "@react-aria/utils" "3.24.1"
     "@react-types/button" "3.9.4"
     "@react-types/shared" "3.23.1"
+
+"@nextui-org/use-callback-ref@2.0.6":
+  version "2.0.6"
+  resolved "https://registry.yarnpkg.com/@nextui-org/use-callback-ref/-/use-callback-ref-2.0.6.tgz#6720a1381d4ce79ae7075949a647b03be8309d99"
+  integrity sha512-2WcwWuK1L/wIpTbibnLrysmmkzWomvkVIcgWayB6n/w+bpPrPCG7Zyg2WHzmMmDhe6imV//KKBgNKRi8Xhu/VA==
+  dependencies:
+    "@nextui-org/use-safe-layout-effect" "2.0.6"
 
 "@nextui-org/use-is-mounted@2.0.6":
   version "2.0.6"
@@ -2330,6 +2372,23 @@
     "@react-stately/calendar" "^3.5.1"
     "@react-types/button" "^3.9.4"
     "@react-types/calendar" "^3.4.6"
+    "@react-types/shared" "^3.23.1"
+    "@swc/helpers" "^0.5.0"
+
+"@react-aria/checkbox@3.14.3":
+  version "3.14.3"
+  resolved "https://registry.yarnpkg.com/@react-aria/checkbox/-/checkbox-3.14.3.tgz#6e2579681008e460d2c764a03f1f1b54e0815868"
+  integrity sha512-EtBJL6iu0gvrw3A4R7UeVLR6diaVk/mh4kFBc7c8hQjpEJweRr4hmJT3hrNg3MBcTWLxFiMEXPGgWEwXDBygtA==
+  dependencies:
+    "@react-aria/form" "^3.0.5"
+    "@react-aria/interactions" "^3.21.3"
+    "@react-aria/label" "^3.7.8"
+    "@react-aria/toggle" "^3.10.4"
+    "@react-aria/utils" "^3.24.1"
+    "@react-stately/checkbox" "^3.6.5"
+    "@react-stately/form" "^3.0.3"
+    "@react-stately/toggle" "^3.7.4"
+    "@react-types/checkbox" "^3.8.1"
     "@react-types/shared" "^3.23.1"
     "@swc/helpers" "^0.5.0"
 
@@ -2532,6 +2591,16 @@
   dependencies:
     "@swc/helpers" "^0.5.0"
 
+"@react-aria/switch@3.6.4":
+  version "3.6.4"
+  resolved "https://registry.yarnpkg.com/@react-aria/switch/-/switch-3.6.4.tgz#6dba901414785de23ee2f4873ea5e23973fdf58d"
+  integrity sha512-2nVqz4ZuJyof47IpGSt3oZRmp+EdS8wzeDYgf42WHQXrx4uEOk1mdLJ20+NnsYhj/2NHZsvXVrjBeKMjlMs+0w==
+  dependencies:
+    "@react-aria/toggle" "^3.10.4"
+    "@react-stately/toggle" "^3.7.4"
+    "@react-types/switch" "^3.5.3"
+    "@swc/helpers" "^0.5.0"
+
 "@react-aria/tabs@3.9.1":
   version "3.9.1"
   resolved "https://registry.yarnpkg.com/@react-aria/tabs/-/tabs-3.9.1.tgz#3cfb44648de1f896499d210b80deb1ead8ec4295"
@@ -2559,6 +2628,19 @@
     "@react-stately/utils" "^3.10.1"
     "@react-types/shared" "^3.23.1"
     "@react-types/textfield" "^3.9.3"
+    "@swc/helpers" "^0.5.0"
+
+"@react-aria/toggle@^3.10.4":
+  version "3.10.7"
+  resolved "https://registry.yarnpkg.com/@react-aria/toggle/-/toggle-3.10.7.tgz#50f7af45e6b875e3ff42e9871db9f065d9910cb7"
+  integrity sha512-/RJQU8QlPZXRElZ3Tt10F5K5STgUBUGPpfuFUGuwF3Kw3GpPxYsA1YAVjxXz2MMGwS0+y6+U/J1xIs1AF0Jwzg==
+  dependencies:
+    "@react-aria/focus" "^3.18.2"
+    "@react-aria/interactions" "^3.22.2"
+    "@react-aria/utils" "^3.25.2"
+    "@react-stately/toggle" "^3.7.7"
+    "@react-types/checkbox" "^3.8.3"
+    "@react-types/shared" "^3.24.1"
     "@swc/helpers" "^0.5.0"
 
 "@react-aria/utils@3.24.1":
@@ -2622,6 +2704,28 @@
     "@internationalized/date" "^3.5.5"
     "@react-stately/utils" "^3.10.3"
     "@react-types/calendar" "^3.4.9"
+    "@react-types/shared" "^3.24.1"
+    "@swc/helpers" "^0.5.0"
+
+"@react-stately/checkbox@3.6.5":
+  version "3.6.5"
+  resolved "https://registry.yarnpkg.com/@react-stately/checkbox/-/checkbox-3.6.5.tgz#0566eae3ba3a84af6f29526b3feaf124d3c3a66b"
+  integrity sha512-IXV3f9k+LtmfQLE+DKIN41Q5QB/YBLDCB1YVx5PEdRp52S9+EACD5683rjVm8NVRDwjMi2SP6RnFRk7fVb5Azg==
+  dependencies:
+    "@react-stately/form" "^3.0.3"
+    "@react-stately/utils" "^3.10.1"
+    "@react-types/checkbox" "^3.8.1"
+    "@react-types/shared" "^3.23.1"
+    "@swc/helpers" "^0.5.0"
+
+"@react-stately/checkbox@^3.6.5":
+  version "3.6.8"
+  resolved "https://registry.yarnpkg.com/@react-stately/checkbox/-/checkbox-3.6.8.tgz#87e43cbf762fce8569e9b0fecd7e6213952e0aac"
+  integrity sha512-c8TWjU67XHHBCpqj6+FXXhQUWGr2Pil1IKggX81pkedhWiJl3/7+WHJuZI0ivGnRjp3aISNOG8UNVlBEjS9E8A==
+  dependencies:
+    "@react-stately/form" "^3.0.5"
+    "@react-stately/utils" "^3.10.3"
+    "@react-types/checkbox" "^3.8.3"
     "@react-types/shared" "^3.24.1"
     "@swc/helpers" "^0.5.0"
 
@@ -2736,7 +2840,16 @@
     "@react-types/tabs" "^3.3.9"
     "@swc/helpers" "^0.5.0"
 
-"@react-stately/toggle@^3.7.4":
+"@react-stately/toggle@3.7.4":
+  version "3.7.4"
+  resolved "https://registry.yarnpkg.com/@react-stately/toggle/-/toggle-3.7.4.tgz#3345b5c939db96305af7c22b73577db5536220ab"
+  integrity sha512-CoYFe9WrhLkDP4HGDpJYQKwfiYCRBAeoBQHv+JWl5eyK61S8xSwoHsveYuEZ3bowx71zyCnNAqWRrmNOxJ4CKA==
+  dependencies:
+    "@react-stately/utils" "^3.10.1"
+    "@react-types/checkbox" "^3.8.1"
+    "@swc/helpers" "^0.5.0"
+
+"@react-stately/toggle@^3.7.4", "@react-stately/toggle@^3.7.7":
   version "3.7.7"
   resolved "https://registry.yarnpkg.com/@react-stately/toggle/-/toggle-3.7.7.tgz#5ff135b8e8a3d2f85a09d599af6fcfc9ccea22c3"
   integrity sha512-AS+xB4+hHWa3wzYkbS6pwBkovPfIE02B9SnuYTe0stKcuejpWKo5L3QMptW0ftFYsW3ZPCXuneImfObEw2T01A==
@@ -2789,7 +2902,14 @@
     "@internationalized/date" "^3.5.5"
     "@react-types/shared" "^3.24.1"
 
-"@react-types/checkbox@^3.8.3":
+"@react-types/checkbox@3.8.1":
+  version "3.8.1"
+  resolved "https://registry.yarnpkg.com/@react-types/checkbox/-/checkbox-3.8.1.tgz#de82c93542b2dd85c01df2e0c85c33a2e6349d14"
+  integrity sha512-5/oVByPw4MbR/8QSdHCaalmyWC71H/QGgd4aduTJSaNi825o+v/hsN2/CH7Fq9atkLKsC8fvKD00Bj2VGaKriQ==
+  dependencies:
+    "@react-types/shared" "^3.23.1"
+
+"@react-types/checkbox@^3.8.1", "@react-types/checkbox@^3.8.3":
   version "3.8.3"
   resolved "https://registry.yarnpkg.com/@react-types/checkbox/-/checkbox-3.8.3.tgz#331055cf283dfb01c6bbcb02355a20decab19ada"
   integrity sha512-f4c1mnLEt0iS1NMkyZXgT3q3AgcxzDk7w6MSONOKydcnh0xG5L2oefY14DhVDLkAuQS7jThlUFwiAs+MxiO3MA==
@@ -2847,6 +2967,13 @@
   version "3.24.1"
   resolved "https://registry.yarnpkg.com/@react-types/shared/-/shared-3.24.1.tgz#fa06cb681d144fce9c515d8bd296d81440a45d25"
   integrity sha512-AUQeGYEm/zDTN6zLzdXolDxz3Jk5dDL7f506F07U8tBwxNNI3WRdhU84G0/AaFikOZzDXhOZDr3MhQMzyE7Ydw==
+
+"@react-types/switch@^3.5.3":
+  version "3.5.5"
+  resolved "https://registry.yarnpkg.com/@react-types/switch/-/switch-3.5.5.tgz#e9d37bf5d974f3cc201503b8d46c24105afa48f0"
+  integrity sha512-SZx1Bd+COhAOs/RTifbZG+uq/llwba7VAKx7XBeX4LeIz1dtguy5bigOBgFTMQi4qsIVCpybSWEEl+daj4XFPw==
+  dependencies:
+    "@react-types/shared" "^3.24.1"
 
 "@react-types/tabs@3.3.7":
   version "3.3.7"

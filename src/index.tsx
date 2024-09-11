@@ -7,6 +7,7 @@ import RoutesConfig from './core/routes';
 
 // Importation des styles globales
 import './style.main.scss';
+import './presentation/styles/animation.scss';
 
 const root = ReactDOM.createRoot(
     document.getElementById('root') as HTMLElement,

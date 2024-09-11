@@ -3,7 +3,7 @@ import { Outlet } from 'react-router-dom';
 
 const Main = () => {
     return (
-        <div className="bg-background w-full h-full">
+        <div className="bg-custom-background w-full h-full">
             <Outlet />
         </div>
     );

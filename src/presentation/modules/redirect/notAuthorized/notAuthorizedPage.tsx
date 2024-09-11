@@ -11,10 +11,10 @@ import { Button } from '@nextui-org/button';
  */
 const UnauthorizedPage = () => {
     return (
-        <div className="tick-container bg-custom-background h-screen w-screen">
-            <div className="tick-content h-screen  flex items-center flex-col justify-center">
+        <div className="bg-[url('src/presentation/assets/image/abstract/point-background.webp')] dark:bg-[url('src/presentation/assets/image/abstract/point-background-dark.webp')] bg-custom-background h-screen w-screen swipeFadeDown">
+            <div className="bg-[url('src/presentation/assets/image/abstract/blue-gradient-background.png')] h-screen  flex items-center flex-col justify-center">
                 <div className="w-5/6 flex items-center">
-                    <img src={NotFound} alt="Not found image" />
+                    <img src={NotFound} alt="Not found" />
 
                     <div>
                         <h1 className="font-syne text-[70px] font-semibold">

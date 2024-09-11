@@ -37,7 +37,7 @@ const ConnectionStatus: FC = () => {
     return isVisible ? (
         <>
             <div
-                className={`ConnectionStatus ${isOnline ? 'online' : 'offline'} outline outline-offset-2 outline-slate-200 font-syne`}
+                className={`ConnectionStatus ${isOnline ? 'online' : 'offline'} outline outline-offset-2 outline-slate-200 font-syne z-50`}
             >
                 <div className="close-button" onClick={handleClose}></div>
 
@@ -45,7 +45,7 @@ const ConnectionStatus: FC = () => {
                     <div>
                         <img
                             src={Internet}
-                            alt="No Internet Image"
+                            alt="No Internet"
                             loading="lazy"
                             width={'240px'}
                             className="img-connection"
@@ -63,7 +63,7 @@ const ConnectionStatus: FC = () => {
                     <div>
                         <img
                             src={NoInternet}
-                            alt="No Internet Image"
+                            alt="Internet"
                             loading="lazy"
                             width={'300px'}
                             className="img-no-connection"
