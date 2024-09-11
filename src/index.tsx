@@ -1,15 +1,20 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import reportWebVitals from './core/config/reportWebVitals';
+
+// Importation des configuration
+import RoutesConfig from './core/routes';
+
+// Importation des styles globales
+import './style.main.scss';
+import './presentation/styles/animation.scss';
 
 const root = ReactDOM.createRoot(
     document.getElementById('root') as HTMLElement,
 );
 root.render(
     <React.StrictMode>
-        <App />
+        <RoutesConfig />
     </React.StrictMode>,
 );
 
