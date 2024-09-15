@@ -9,7 +9,7 @@
     }
 }
 
-.swipeFadeUp{
+.swipeFadeUp {
     animation: swipeFadeUp 0.8s ease-in-out;
 }
 
@@ -24,7 +24,7 @@
     }
 }
 
-.swipeFadeDown{
+.swipeFadeDown {
     animation: swipeFadeDown 0.8s ease-in-out;
 }
 
@@ -39,7 +39,7 @@
     }
 }
 
-.swipeFadeUpCard{
+.swipeFadeUpCard {
     animation: swipeFadeUpCard 0.8s ease-in-out;
 }
 
@@ -76,7 +76,7 @@
     }
 }
 
-.zoom{
+.zoom {
     animation: zoomFade 1s ease-in-out;
 }
 
@@ -98,6 +98,35 @@
     }
 }
 
+
+@keyframes swipeLeft {
+    0% {
+        transform: translateX(50px);
+    }
+    100% {
+        transform: translateX(0px);
+    }
+}
+
+.swipeLeft{
+    animation: 0.5s swipeLeft ease-in-out;
+}
+
+@keyframes swipeRight {
+    0% {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+.swipeRight{
+    animation: 0.8s swipeRight ease-in-out;
+}
+
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -108,8 +137,8 @@
     }
 }
 
-.fadeIn{
-    animation: fadeIn .3s ease-in-out;
+.fadeIn {
+    animation: fadeIn 0.3s 3s ease-in-out;
 }
 
 @keyframes fadeOut {
@@ -130,6 +159,24 @@
     to {
         transform: rotate(360deg);
     }
+}
+
+@keyframes turnRotate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    50% {
+        transform: rotate(10deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+.turnRotate{
+    animation: turnRotate 6s ease infinite;
+    color: #ebebeb;
 }
 
 @keyframes swipeFadeUpInfinite {

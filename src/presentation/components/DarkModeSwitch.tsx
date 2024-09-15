@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import { Switch } from '@nextui-org/switch';
 
+import { getInitialDarkModePreference } from 'src/presentation/utils/theme';
+
 // Importation des icones
 import { Sun, Moon } from 'lucide-react';
 
@@ -12,19 +14,8 @@ const DarkModeSwitch = () => {
     const [isDarkMode, setIsDarkMode] = useState<boolean>(false);
 
     useEffect(() => {
-        // Vérifie le mode sombre initial en fonction des préférences du système ou du stockage local
-        const darkModePreference =
-            localStorage.getItem('abm-mytick-theme') === 'dark' ||
-            (!localStorage.getItem('abm-mytick-theme') &&
-                window.matchMedia('(prefers-color-scheme: light)').matches);
+        const darkModePreference = getInitialDarkModePreference();
         setIsDarkMode(darkModePreference);
-
-        // Applique la classe de mode sombre
-        if (darkModePreference) {
-            document.documentElement.classList.add('dark');
-        } else {
-            document.documentElement.classList.remove('dark');
-        }
     }, []);
 
     const handleDarkModeToggle = () => {

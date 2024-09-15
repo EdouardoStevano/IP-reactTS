@@ -1,39 +1,30 @@
-import React, { useEffect, useState } from 'react';
-import getConfig from 'src/presentation/utils/config/getConfig';
-import { getCopyrightText } from 'src/presentation/utils/config/copyright';
+import React from 'react';
+import { Outlet } from 'react-router-dom';
+
+// Importation de composant
+import Sidebar from './layouts/sidebar/sidebar';
+
+// Importation des constants
+import { menus } from './constants/navigation';
+
+import WelcomeMessage from '../../components/welcomeMessage';
 
 /**
  *
  * @desc: Interface du Page de dashboard
  */
 const DashboardPage = () => {
-    const [role, setRole] = useState<string | null>(null);
-    const [error, setError] = useState<string | null>(null);
-
-    useEffect(() => {
-        const conf = getConfig();
-
-        if (conf.decodedToken) {
-            setRole(conf.decodedToken.role_name);
-        } else {
-            setError('Aucun rôle trouvé ou échec du décodage du token.');
-        }
-    }, []);
-
     return (
-        <div className="tick-container bg-custom-background h-screen w-screen">
-            <div className="tick-content h-screen w-screen">
-                <div>
-                    {error && <p style={{ color: 'red' }}>{error}</p>}
-                    <p
-                        className={'font-Poppins font-normal text-[13px]'}
-                        dangerouslySetInnerHTML={{ __html: getCopyrightText() }}
-                    />
-                    {role ? (
-                        <p>Votre rôle est : {role}</p>
-                    ) : (
-                        <p>Chargement du rôle...</p>
-                    )}
+        <div className="bg-[url('src/presentation/assets/image/abstract/point-background.webp')] dark:bg-[url('src/presentation/assets/image/abstract/point-background-dark.webp')] bg-light-custom-background dark:bg-slate-950 h-screen w-screen">
+            <div className="bg-[url('src/presentation/assets/image/abstract/blue-gradient-background.png')] bg-cover h-full sm:h-screen w-screen flex flex-col-reverse justify-end sm:flex-row">
+                <WelcomeMessage username='Edouardo Stevano'/>
+
+                <Sidebar menuGroups={menus} />
+
+                <div className="main-content h-full sm:w-full">
+                    <div>
+                        <Outlet />
+                    </div>
                 </div>
             </div>
         </div>

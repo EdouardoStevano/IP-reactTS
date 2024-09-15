@@ -2,8 +2,8 @@ import React, { useState, useEffect, FC } from 'react';
 import './connectionStatus.scss';
 
 // Importation des ressources
-import NoInternet from '../../assets/image/gif/404.gif';
-import Internet from '../../assets/image/gif/connextion.gif';
+import NoInternet from '../assets/image/gif/404.gif';
+import Internet from '../assets/image/gif/connextion.gif';
 
 const ConnectionStatus: FC = () => {
     const [isOnline, setIsOnline] = useState<boolean | null>(null);
@@ -84,7 +84,7 @@ const ConnectionStatus: FC = () => {
                 )}
             </div>
 
-            <div className="fixed w-screen h-screen backdrop-blur-sm bg-[#00000010]"></div>
+            {/* <div className="fixed w-screen h-screen backdrop z-50-blur-sm bg-[#00000010]"></div> */}
         </>
     ) : null;
 };

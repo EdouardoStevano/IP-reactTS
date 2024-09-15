@@ -4,6 +4,10 @@
 @tailwind components;
 @tailwind utilities;
 
+*{
+    font-family: Syne, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
 input {
     outline: none;
     border: none;
@@ -49,13 +53,8 @@ input {
     background-position: center;
 }
 
-// .sign-image2-left{
-//     background-color: rgba(0, 0, 0, 0.1);
-//     height: 83%;
-//     backdrop-filter: blur(2px);
-//     position: absolute;
-//     margin-left: 50px;
-//     transform: rotate(20deg);
-//     width: 570px;
-//     border-radius: 60% 40% 49% 51% / 73% 37% 63% 27%;
-// }
+.menu-btn.active{
+    background-color: hsl(var(--nextui-primary) / var(--nextui-primary-opacity, var(--tw-bg-opacity)));
+    color: #fff;
+    opacity: 1;
+}

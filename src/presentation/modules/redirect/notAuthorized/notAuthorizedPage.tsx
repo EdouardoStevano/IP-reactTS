@@ -11,7 +11,7 @@ import { Button } from '@nextui-org/button';
  */
 const UnauthorizedPage = () => {
     return (
-        <div className="bg-[url('src/presentation/assets/image/abstract/point-background.webp')] dark:bg-[url('src/presentation/assets/image/abstract/point-background-dark.webp')] bg-custom-background h-screen w-screen swipeFadeDown">
+        <div className="bg-[url('src/presentation/assets/image/abstract/point-background.webp')] dark:bg-[url('src/presentation/assets/image/abstract/point-background-dark.webp')] h-screen w-screen swipeFadeDown">
             <div className="bg-[url('src/presentation/assets/image/abstract/blue-gradient-background.png')] h-screen  flex items-center flex-col justify-center">
                 <div className="w-5/6 flex items-center">
                     <img src={NotFound} alt="Not found" />

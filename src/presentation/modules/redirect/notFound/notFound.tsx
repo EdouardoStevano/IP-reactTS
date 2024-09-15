@@ -8,7 +8,7 @@ import { Button } from '@nextui-org/button';
 
 const notFound = () => {
     return (
-        <div className="bg-[url('src/presentation/assets/image/abstract/point-background.webp')] dark:bg-[url('src/presentation/assets/image/abstract/point-background-dark.webp')] bg-custom-background h-screen w-screen swipeFadeDown">
+        <div className="bg-[url('src/presentation/assets/image/abstract/point-background.webp')] dark:bg-[url('src/presentation/assets/image/abstract/point-background-dark.webp')] bg-custom-background dark:bg-slate-950 h-screen w-screen swipeFadeDown">
             <div className="bg-[url('src/presentation/assets/image/abstract/blue-gradient-background.png')] h-screen  flex items-center justify-center	flex-col">
                 <Lottie
                     animationData={NotFoundAnimation}

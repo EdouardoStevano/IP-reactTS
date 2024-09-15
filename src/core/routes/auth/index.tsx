@@ -1,13 +1,14 @@
 import React, { lazy } from 'react';
 import { Route, Routes } from 'react-router-dom';
 
-// Importation des pages
+// Importation du page
 const AuthLayout = lazy(() => import('src/presentation/modules/auth'));
 
 // Importation des panels
 const AuthSignIn = lazy(
     () => import('src/presentation/modules/auth/panels/signIn'),
 );
+
 const AuthForgotPassword = lazy(
     () => import('src/presentation/modules/auth/panels/forgetPassword'),
 );

@@ -7,7 +7,7 @@ import { Outlet } from 'react-router-dom';
  */
 const RedirectionRoutes = () => {
     return (
-        <div className="tick-container bg-custom-background h-screen w-screen">
+        <div className="bg-[url('src/presentation/assets/image/abstract/point-background.webp')] dark:bg-[url('src/presentation/assets/image/abstract/card-background.webp')] bg-white dark:bg-slate-950 h-screen w-screen">
             <Outlet />
         </div>
     );

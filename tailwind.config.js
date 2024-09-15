@@ -14,7 +14,7 @@ export default {
         extend: {
             colors: {
                 light: {
-                    'custom-background': '#DFEBEE',
+                    'custom-background': '#f0f5f7',
                     'custom-primary': '#265A99',
                     'custom-secondary': '#484848',
                     'custom-glass': '#0000001',

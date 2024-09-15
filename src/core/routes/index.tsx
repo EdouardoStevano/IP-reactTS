@@ -1,11 +1,15 @@
 import React, { lazy, Suspense } from 'react';
 import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom';
+import { Toaster } from 'sonner';
 
 // Importation des routes de redirection
 import Loader from 'src/presentation/modules/redirect/loader/loaderPage';
 
+// Importation des utils
+import { getInitialDarkModePreference } from 'src/presentation/utils/theme';
+
 // importation des composants
-import ConnectionStatus from 'src/presentation/components/connexionStatus/connectionStatus';
+import ConnectionStatus from 'src/presentation/components/connectionStatus';
 
 // Importaion des securisation des routes
 import ProtectedRoute from 'src/infra/security/protectedRoutes';
@@ -29,9 +33,17 @@ const NotFound = lazy(
  * @desc: Configuration global des routes
  */
 const RoutesConfig = () => {
+    getInitialDarkModePreference();
     return (
         <BrowserRouter>
             <Suspense fallback={<Loader />}>
+                <Toaster
+                    position="top-center"
+                    expand={false}
+                    richColors
+                    closeButton
+                />
+
                 {/* Constant components */}
                 <ConnectionStatus />
 

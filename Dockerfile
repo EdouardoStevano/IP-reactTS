@@ -1,5 +1,5 @@
 # Build de l'application avec Node.js
-FROM node:21-alpine AS builder
+FROM node:20.16-alpine as builder
 
 # Définir le répertoire de travail
 WORKDIR /usr/src/app
