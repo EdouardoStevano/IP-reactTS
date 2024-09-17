@@ -1,5 +1,11 @@
 // socketContext.tsx
-import React, { createContext, useContext, useEffect, useState, ReactNode  } from 'react';
+import React, {
+    createContext,
+    useContext,
+    useEffect,
+    useState,
+    ReactNode,
+} from 'react';
 import { io, Socket } from 'socket.io-client';
 
 // Type pour le contexte du Socket

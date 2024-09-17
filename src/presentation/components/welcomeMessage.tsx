@@ -28,7 +28,7 @@ const WelcomeMessage: React.FC<WelcomeMessageProps> = ({ username }) => {
     return (
         <div className="fixed mx-5 bottom-5 sm:bottom-10 sm:right-10 bg-white dark:bg-slate-700 bg-opacity-60 shadow-lg rounded-3xl p-6 backdrop-blur-lg flex items-center space-x-4 transition transform  sm:w-[600px] z-40">
             {/* Message de bienvenue */}
-            <div className='sm:w-[62%]'>
+            <div className="sm:w-[62%]">
                 <h2 className="text-2xl font-bold text-gray-800 dark:text-gray-300">
                     Manahoana {username}!
                 </h2>

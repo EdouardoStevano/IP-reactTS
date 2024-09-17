@@ -76,7 +76,7 @@ const Sidebar: React.FC<SidebarProps> = ({ menuGroups }) => {
     return (
         <div
             className={clsx(
-                'sidebar swipeRight sm:items-start flex flex-row sm:flex-col sm:justify-between items-center px-10 justify-around h-auto transition ease-in-out delay-400 bg-white rounded-t-3xl sm:rounded-none shadow-2xl sm:shadow-none sm:h-full sm:py-5 sm:px-4 font-syne',
+                'sidebar swipeRight sm:items-start flex flex-row sm:flex-col sm:justify-between items-center px-10 justify-around h-auto transition ease-in-out delay-400 bg-white dark:bg-slate-900 rounded-t-3xl sm:rounded-none sm:bg-transparent shadow-2xl sm:shadow-none sm:h-full sm:py-5 sm:px-4 font-syne',
                 isCollapsed
                     ? 'sm:transition w-30 sm:bg-transparent fadeUpCard'
                     : 'sm:transition sm:w-[300px] sm:bg-transparent',
@@ -261,7 +261,7 @@ const Sidebar: React.FC<SidebarProps> = ({ menuGroups }) => {
                 </div>
 
                 {!isCollapsed && (
-                    <div className="mt-2">
+                    <div className="hidden sm:flex mt-2">
                         <DarkModeSwitch />
                     </div>
                 )}

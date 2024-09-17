@@ -98,7 +98,6 @@
     }
 }
 
-
 @keyframes swipeLeft {
     0% {
         transform: translateX(50px);
@@ -108,7 +107,7 @@
     }
 }
 
-.swipeLeft{
+.swipeLeft {
     animation: 0.5s swipeLeft ease-in-out;
 }
 
@@ -123,7 +122,7 @@
     }
 }
 
-.swipeRight{
+.swipeRight {
     animation: 0.8s swipeRight ease-in-out;
 }
 
@@ -174,7 +173,7 @@
     }
 }
 
-.turnRotate{
+.turnRotate {
     animation: turnRotate 6s ease infinite;
     color: #ebebeb;
 }

@@ -4,7 +4,7 @@
 @tailwind components;
 @tailwind utilities;
 
-*{
+* {
     font-family: Syne, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -53,8 +53,11 @@ input {
     background-position: center;
 }
 
-.menu-btn.active{
-    background-color: hsl(var(--nextui-primary) / var(--nextui-primary-opacity, var(--tw-bg-opacity)));
+.menu-btn.active {
+    background-color: hsl(
+        var(--nextui-primary) /
+            var(--nextui-primary-opacity, var(--tw-bg-opacity))
+    );
     color: #fff;
     opacity: 1;
 }

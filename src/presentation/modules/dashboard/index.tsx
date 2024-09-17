@@ -17,7 +17,7 @@ const DashboardPage = () => {
     return (
         <div className="bg-[url('src/presentation/assets/image/abstract/point-background.webp')] dark:bg-[url('src/presentation/assets/image/abstract/point-background-dark.webp')] bg-light-custom-background dark:bg-slate-950 h-screen w-screen">
             <div className="bg-[url('src/presentation/assets/image/abstract/blue-gradient-background.png')] bg-cover h-full sm:h-screen w-screen flex flex-col-reverse justify-end sm:flex-row">
-                <WelcomeMessage username='Edouardo Stevano'/>
+                <WelcomeMessage username="Edouardo Stevano" />
 
                 <Sidebar menuGroups={menus} />
 

@@ -1,14 +1,16 @@
 export const GeneratePassword = (): string => {
     const minLength = 9;
     const maxLength = 10;
-    const charset = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^&*()_+[]{}|;:,.<>?";
-    let newPassword = "";
+    const charset =
+        'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^&*()_+[]{}|;:,.<>?';
+    let newPassword = '';
     let hasUppercase = false;
     let hasLowercase = false;
     let hasDigit = false;
     let hasSpecialChar = false;
 
-    const length = Math.floor(Math.random() * (maxLength - minLength + 1)) + minLength;
+    const length =
+        Math.floor(Math.random() * (maxLength - minLength + 1)) + minLength;
 
     while (!hasUppercase || !hasLowercase || !hasDigit || !hasSpecialChar) {
         newPassword = '';
@@ -21,7 +23,8 @@ export const GeneratePassword = (): string => {
             if (/[A-Z]/.test(char)) hasUppercase = true;
             if (/[a-z]/.test(char)) hasLowercase = true;
             if (/[0-9]/.test(char)) hasDigit = true;
-            if (/[!@#$%^&*()_+\[\]{}|;:,.<>?]/.test(char)) hasSpecialChar = true;
+            if (/[!@#$%^&*()_+\[\]{}|;:,.<>?]/.test(char))
+                hasSpecialChar = true;
             newPassword += char;
         }
     }
